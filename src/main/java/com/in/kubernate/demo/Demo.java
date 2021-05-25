@@ -5,9 +5,10 @@
  */
 package com.in.kubernate.demo;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
-import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
 
 /**
@@ -21,5 +22,11 @@ public class Demo {
     @GET
     public String hello(){
         return "Hello";
+    }
+    
+    @Path("/host")
+    @GET
+    public String host() throws UnknownHostException{
+        return InetAddress.getLocalHost().getHostName();
     }
 }

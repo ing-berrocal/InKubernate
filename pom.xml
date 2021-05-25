@@ -11,7 +11,7 @@
 	<groupId>com.in.kubernate</groupId>
 	<artifactId>demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>demo</name>
+	<name>InKubernate</name>
 	<description>Demo for kubernate</description>
 	<properties>
 		<java.version>11</java.version>
